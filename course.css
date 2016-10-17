@@ -1,0 +1,113 @@
+/********************************************************
+    The purpose of course.css is to house only the css
+    specific to an individual course. The online.css
+    houses all the default template formatting.
+********************************************************/
+/* DO NOT DELETE OR MODIFY THIS IMPORT */
+@import url("https://content.byui.edu/integ/gen/599082e0-3e89-4fd9-ac69-2615865d63c7/0/online.css");
+
+/* Add Course Specific css Below */
+
+/********************************************************
+    Drop-down Done Buttons
+********************************************************/
+
+.drop-down {
+    min-height: 51px;
+}
+
+.drop-down.check-item {
+    display: inline-block;
+    margin: 10px 0 10px 2.5%;
+    width: calc(95% - 60px);
+}
+
+.check-wrapper {
+    display: none;
+    position: relative;
+    left: -6px;
+    margin: 10px 0;
+    width: 60px;
+    height: 51px;
+    text-align: center;
+    background: #6c6c6c;
+    vertical-align: bottom;
+}
+
+.check-wrapper:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: calc(100% - 10px);
+    border-left: 1px solid #4e4e4e;
+}
+
+.check-wrapper label {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 10px;
+    width: 40px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 11px;
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #5d5d5d;
+    border-radius: 5px;
+    background: linear-gradient(#dddddd, #797979);
+}
+
+.check-wrapper input:focus ~ label {
+    outline: #7ab1ea solid 2px;
+    outline-offset: 1px;
+}
+
+.check-wrapper input:checked ~ label {
+    color: #fff;
+    background: linear-gradient(#6cb52d, #257208);
+}
+
+.check-wrapper input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -999;
+}
+
+/* Checkbox Tool Message overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#alertBox {
+    margin: 100px auto 0;
+    width: 95%;
+    max-width: 500px;
+    background: #dbdbdb;
+}
+
+#alertBox p:nth-child(1) {
+    margin: 0;
+    padding: 10px;
+}
+
+#alertBox p:nth-child(2) {
+    position: relative;
+    padding: 10px 10px 35px;
+    background: #fff;
+}
+
+#alertBox button {
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
