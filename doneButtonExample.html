@@ -14,10 +14,19 @@
             <img src="smallBanner.jpg" alt="Course Banner" />
         </div>
         <div id="article">
-
-
-            <h3>Examples</h3>
-            <div class="drop-down">Example 1</div>
+            <h1>Done Buttons</h1>
+            
+            <p>Insert the following HTML in-between the drop-down div and the drop-content div:</p>
+            
+            <code>
+                &lt;div class="check-wrapper"&gt;<br>
+                &nbsp;&nbsp;&lt;input id="check1" class="check" type="checkbox"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="check1"&gt;DONE&lt;/label&gt;<br>
+                &lt;/div&gt;<br>
+            </code>
+            <p style="color: red;">NOTE: It is important that for each dropdown you add you increment the number in the input id and label for attribute. So the next dropdown will have an input with id="check2" and a label tag with for="check2".</p>
+            
+            <div class="drop-down">Example</div>
             <div class="check-wrapper">
                 <input id="check1" class="check" type="checkbox">
                 <label for="check1">DONE</label>
@@ -25,14 +34,14 @@
             <div class="drop-content">
                 Content
             </div>
-
+            
             <div class="drop-down">Example 2</div>
             <div class="check-wrapper">
                 <input id="check2" class="check" type="checkbox">
                 <label for="check2">DONE</label>
             </div>
             <div class="drop-content">
-               Content
+                Content
             </div>
 
         </div>
